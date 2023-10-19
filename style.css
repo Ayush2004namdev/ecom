@@ -271,7 +271,7 @@ html,body{
 
 .footer{
     background-color: #001524;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -451,7 +451,7 @@ html,body{
 }
 
 @media screen and (max-width:650px){
-    .navbar .left{
+    .navbar .left,.navbar .right li{
         display: none;
     }
     
@@ -499,11 +499,32 @@ html,body{
         width: 250px;
         margin-bottom: 30px;
     }
+    
+    .footer{
+        display: block;
+        text-align: center;
+    }
 
+    .div1{
+        text-align: center;
+        width: 100%;
+    }
+
+    .div2{
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .div3{
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width:500px) {
     .navbar .right li{
         display: none;
     }
+
 }
